@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 670px;
+        padding: 10px;
+      }
+
+      input{
+        border-radius: 90px;
+        border: solid rgb(165, 165, 165) 2px;
+        height: 20px;
+      }
+      table,
+      tr, 
+      td,
+      th {
+        border-collapse: collapse;
+        border: 2px solid rgb(0, 0, 0);
+        padding: 4px;
+      }
+
+      table{
+        width: 200px;
+      }
+      
+     main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 90px;
+      flex-direction: column;
+     }
+     
+    </style>
+  </head>
+  <body>
+    <main>
+   <form>
+  <input type="text" id="descricao" placeholder="Descrição" required />
+  <input type="date" id="data_entrada" required />
+  <input type="date" id="data_saida" />
+  <input type="text" id="tipo" placeholder="Tipo" required />
+  <input type="number" id="valor" placeholder="Valor"  />
+
+  <select name="" id="id_fabric" required></select>
+  <button>Cadastrar Manutenção</button>
+</form>
+    <table>
+     <thead>
+  <tr>
+    <th>Id</th>
+    <th>Descrição</th>
+    <th>Data Entrada</th>
+    <th>Data Saida</th>
+    <th>Tipo</th>
+    <th>Valor</th>
+    <th>Id Veículo</th>
+    <th>Ações</th>
+  </tr>
+ </thead>
+      <tbody></tbody>
+    </table>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
